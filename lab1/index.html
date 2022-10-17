@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>A Basic Page using React</title>
+</head>
+<body>
+    <div>
+        <div id="basicComponentContainer"></div>
+        <div id="animalContainer"></div>
+    </div>
+    <!-- Load React-->
+    <!-- Note: when deploying , replace "development.js" with "production.min.js"-->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin>
+    </script>
+    <!-- Load babel to enable the use of JSX -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+<!-- Load our React component. Note the type is "text/babel" which is required if using JSX -->
+<script src="basicComponent.js" type="text/babel"></script>
+<script src="animals.js" type="text/babel"></script>
+</body>
+</html>
