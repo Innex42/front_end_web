@@ -1,7 +1,7 @@
 function CurrentModule(props) {
     return (
     <div>
-    <p> You will have {props.name} at somepoint. When? Who knows</p>
+    <p> You will have {props.name} at some point. When? Who knows</p>
     </div>
     );
     }
