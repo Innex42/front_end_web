@@ -1,6 +1,6 @@
 import React from "react";
 import { items } from "./data/data";
-import DisplayFoodItems from "./DisplayFoodItems";
+import DisplayFoodItems from "./components/DisplayFoodItems";
 
 console.log( {items})
 function App() {
