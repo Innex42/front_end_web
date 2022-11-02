@@ -1,0 +1,59 @@
+
+
+//change the theme
+/*$theme-colors: (
+    "primary": #00d900,
+    "danger": #ffaf36ee
+);
+$body-bg: green;
+$body-color: rgba(43, 62, 19, 0.991); */
+
+$bgcolor: lightblue;
+body {
+    background-color: $bgcolor;
+}
+P {
+    background-color: darken($bgcolor, 10%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+$textcolor: darkblue;
+$fontsize: 12px;
+/* Use the variables */
+/*#root {
+background-color: $bgcolor;
+color: $textcolor;
+font-size: $fontsize;
+} */
+
+nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a{
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+
+
+
+@import "base";
+.inverse {
+    background-color: $primary-color;
+    color: green;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'styles/_colors.scss'; // assuming a styles directory under src/
+@import '~nprogress/nprogress'; // importing a css file from the nprogress node module
+@import 'styles/colors'; // assuming a styles directory under src/, where _colors.scss
+ //partial file exists.
+@import 'nprogress/nprogress'; // importing a css file from the nprogress node module
