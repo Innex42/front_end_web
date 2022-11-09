@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Item from "./Item";
 import FetchData from './FetchNutrition'; 
 import {items} from '../data/Data'
+import BarChart from './NutritionChart';
+
 
 const DisplayFoodItems = () => {
     const [selectedItem,setSelectedItem] = useState("")
@@ -10,6 +12,7 @@ const DisplayFoodItems = () => {
     } 
     
     return (
+        
         <>
         <ul>
         <h2>Menu</h2>
@@ -20,9 +23,11 @@ const DisplayFoodItems = () => {
                 )
             })}
         </ul>
-        <h2>Food: {selectedItem.name}</h2>
         <FetchData query={selectedItem.name}/>
+
+        <BarChart/>
         </>
+        
     );
 };
 export default DisplayFoodItems;
